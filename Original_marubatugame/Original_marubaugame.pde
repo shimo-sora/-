@@ -1,10 +1,10 @@
 import ddf.minim.*;  // Minimライブラリをインポート
 /* === グローバル変数 === */
-Board board;//クラス"Bord"の変数
+Board board;//Bordのインスタンス変数を宣言
 boolean maruTurn = true;//ターン判別
 boolean win = false;//勝敗判定
 int winner = 0;//勝者判定(〇 = 1,× = 2,)
-Minim minim;//クラス "Minim"の変数
+Minim minim;//Minimのインスタンス変数を宣言
 AudioPlayer win_sound,effect,start;//クラス"AudioPlayer"の変数三つ
 /* === セットアップ(一回だけ走る) === */
 void setup() {
@@ -67,3 +67,4 @@ void keyPressed() {
     }
   }
 }
+
